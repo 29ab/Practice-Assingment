@@ -1,0 +1,301 @@
+/* Normal modal css */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-left: 100px;
+    padding-top: 50px;
+}
+
+.modalContent {
+    border: 1px solid #888;
+    background-color: #fefefe;
+    width: 90%;
+    height: 200px;
+    overflow-y: scroll;
+    overflow-x: none;
+}
+
+.modal>header {
+    display: inline-block;
+    width: 90%;
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+.modal>footer {
+    display: inline-block;
+    width: 90%;
+    text-align: center;
+    background-color: aliceblue;
+}
+
+.modal_content>p {
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+#close {
+    font-size: 30px;
+    font-weight: bolder;
+    float: right;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+
+#close:hover {
+    cursor: context-menu;
+}
+
+header>h3 {
+    display: inline-block;
+}
+
+/* Slide model css */
+
+.slide-right-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 650px;
+    overflow: scroll;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: auto;
+    padding-left: 31%;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animateright;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animateright;
+    animation-duration: 0.5s
+}
+
+.right-modal-content {
+    border: 1px solid #888;
+    background-color: #fefefe;
+    width: 70%;
+    height: 500px;
+    overflow-y: scroll;
+    overflow-x: none;
+}
+
+@-webkit-keyframes animateright {
+    from {
+        right: -600px;
+        opacity: 0
+    }
+
+    to {
+        right: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animateright {
+    from {
+        right: -600px;
+        opacity: 0
+    }
+
+    to {
+        right: 0;
+        opacity: 1
+    }
+}
+
+.slide-right-modal>header {
+    display: inline-block;
+    width: 70%;
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+.slide-right-modal>footer {
+    display: inline-block;
+    width: 70%;
+    text-align: center;
+    background-color: aliceblue;
+}
+
+.right-modal-content>p {
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+#close-rightModel {
+    font-size: 30px;
+    font-weight: bolder;
+    float: right;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+
+#close-rightModel:hover {
+    cursor: context-menu;
+}
+
+
+/* hybrid model css*/
+
+.Hybridmodal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 92%;
+    height: 100%;
+    overflow: scroll;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-left: 100px;
+    padding-top: 50px;
+}
+
+.hybrid-modal-content {
+    border: 1px solid #888;
+    background-color: #fefefe;
+    width: 90%;
+    height: 200px;
+    overflow-y: scroll;
+    overflow-x: none;
+}
+
+.Hybridmodal>header {
+    display: inline-block;
+    width: 90%;
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+.Hybridmodal>footer {
+    display: inline-block;
+    width: 90%;
+    text-align: center;
+    background-color: aliceblue;
+}
+
+.hybrid-modal-content>p {
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+#hybridModel-close {
+    font-size: 30px;
+    font-weight: bolder;
+    float: right;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+
+#hybridModel-close:hover {
+    cursor: context-menu;
+}
+
+header>h3 {
+    display: inline-block;
+}
+
+
+
+.hybrid-slide-right-modal {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 650px;
+    overflow: scroll;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: auto;
+    padding-left: 31%;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animateright;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animateright;
+    animation-duration: 0.5s
+}
+
+.Hybrid-right-modal-content {
+    border: 1px solid #888;
+    background-color: #fefefe;
+    width: 70%;
+    height: 500px;
+    overflow-y: scroll;
+    overflow-x: none;
+}
+
+@-webkit-keyframes animateright {
+    from {
+        right: -600px;
+        opacity: 0
+    }
+
+    to {
+        right: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animateright {
+    from {
+        right: -600px;
+        opacity: 0
+    }
+
+    to {
+        right: 0;
+        opacity: 1
+    }
+}
+
+.hybrid-slide-right-modal>header {
+    display: inline-block;
+    width: 70%;
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+.hybrid-slide-right-modal>footer {
+    display: inline-block;
+    width: 70%;
+    text-align: center;
+    background-color: aliceblue;
+}
+
+.Hybrid-right-modal-content>p {
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+#close-Hybrid-rightModel {
+    font-size: 30px;
+    font-weight: bolder;
+    float: right;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+
+#close-Hybrid-rightModel:hover {
+    cursor: context-menu;
+}
+
+.Hybridmodal>footer>h3 {
+    display: inline-block;
+}
+
+.Hybridmodal>footer>button {
+    float: right;
+    margin: 2% 2%;
+}
