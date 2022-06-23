@@ -1,0 +1,127 @@
+// variables 
+$bodder_thickness: 3px;
+$margin: 30px;
+
+#header-style {
+    height: 50px;
+    background-color: beige;
+    width: 100%;
+    margin: $margins;
+    
+}
+#container{
+    height: 86vh;
+    position: relative;
+    
+}
+.left{
+    display: inline-block;
+    width: 4%;
+    background-color: rgb(209, 196, 233) ;
+    height: 100%;
+    vertical-align: top;
+    // margin: $margins;
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-align: center;
+    
+}
+
+#display_cards {
+    display: inline-block;
+    width: 90%;
+    height: 100%;
+    padding-left: 20px;
+    vertical-align: top;
+    // overflow: hidden;
+    overflow-y: scroll;
+    position: absolute;
+    left: 70px;
+    top: 0;
+}
+
+.right{
+    display: inline-block;
+    width: 4%;
+    background-color: green;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.slide_model {
+    display: none;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #4C75A3;
+    overflow-x: hidden;
+    // margin-top: 50px;
+    transition: 0.2s;
+    padding-top: 60px;
+    padding-left: 20px;
+}
+
+@media screen and (max-height: 450px) {
+    #header-style {
+        height: 50px;
+        background-color: beige;
+        width: 100%;
+    }
+
+    .slide_model {
+        padding-top: 15px;
+    }
+}
+
+
+.square_card {
+    display: inline-block;
+    // position: relative;
+    background-color: rgb(236, 239, 241);
+    width: 500px;
+    height: 250px;
+    margin-top: $margin;
+    margin-right: $margin;
+    margin-bottom: 20px;
+    border-radius: 5%;
+
+    .circle {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        margin-left: 25%;
+        margin-top: $margin;
+        border-top: $bodder_thickness solid purple;
+        border-left: $bodder_thickness solid red;
+        border-bottom: $bodder_thickness solid blue;
+        border-right: $bodder_thickness solid green;
+        border-radius: 50%;
+
+        p {
+            position: absolute;
+            text-align: center;
+            top: 25px;
+            left: 45%;
+        }
+    }
+
+    .bottom_details {
+        margin-top: 30px;
+        text-align: center;
+    }
+}
+
+#footer_bar {
+    overflow: hidden;
+    position: sticky;
+    float: bottom;
+    background-color: rgb(224, 224, 224);
+    height: 50px;
+    margin-top: 0px;
+    width: 100%;
+}
