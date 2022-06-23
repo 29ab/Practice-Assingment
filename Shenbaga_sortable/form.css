@@ -1,0 +1,31 @@
+#form {
+    display: inline-block;
+    width: 500px;
+    background-color: #F5F5F5;
+    border: 1px solid #E0E0E0;
+    padding: 20px;
+    margin-left: 35%;
+}
+
+#form input {
+    width: 250px;
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+#buttons {
+    margin-top: 20px;
+
+}
+
+#submit-button {
+    float: left;
+}
+
+#viewpage {
+    float: right;
+}
